@@ -50,7 +50,7 @@ export const CountdownSection: React.FC = () => {
   const getGoogleCalendarUrl = () => {
     const title = encodeURIComponent('白庭宇 & 李佳曄 婚禮盛宴');
     const details = encodeURIComponent(
-      '誠摯邀請您見證庭宇與佳曄的婚禮盛典！\n\n地點：高雄寒軒國際大飯店 40F 嘉賓廳\n時間：2026年9月19日 12:00 入席'
+      '誠摯邀請您見證庭宇與佳曄的婚禮盛典！\n\n地點：高雄寒軒國際大飯店 40F 嘉賓廳\n時間：2026年9月19日 12:00 開席'
     );
     const location = encodeURIComponent(WEDDING_LOCATION.address);
     // 2026-09-19 11:30 to 15:30 (UTC+8 -> 03:30 to 07:30 UTC)
@@ -147,7 +147,7 @@ export const CountdownSection: React.FC = () => {
                   {WEDDING_DATE_WEEKDAY}
                 </span>
                 <span className="text-[#C5A059]">•</span>
-                <span className="font-medium">中午 12:00 準時入席</span>
+                <span className="font-medium">中午 12:00 開席</span>
                 <span className="text-[#C5A059]">•</span>
                 <span className="text-[#6B5B5E]">寒軒國際大飯店 40F</span>
               </div>
