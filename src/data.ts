@@ -19,8 +19,8 @@ export const COUPLE_NAMES = {
 };
 
 export const WEDDING_LOCATION = {
-  name: '高雄寒軒國際大飯店 · 40F',
-  englishName: 'Han-Hsien International Hotel Kaohsiung, 40F',
+  name: '高雄寒軒國際大飯店 · 40F 嘉賓廳',
+  englishName: 'Han-Hsien International Hotel Kaohsiung, 40F VIP Room',
   address: '高雄市苓雅區四維三路 33 號 40 樓',
   googleMapsUrl: 'https://maps.google.com/?q=高雄寒軒國際大飯店',
   phone: '+886 7 332 2000',

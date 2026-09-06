@@ -109,7 +109,7 @@ export const CountdownSection: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="relative p-[1.5px] rounded-3xl bg-gradient-to-r from-[#941B26]/25 via-white to-[#C5A059]/25 shadow-[0_10px_35px_rgba(148,27,38,0.06)] font-chinese"
         >
-          <div className="rounded-[22px] bg-white/95 backdrop-blur-2xl p-8 sm:p-12 text-center relative overflow-hidden border border-[#EFECE6]">
+          <div className="rounded-[22px] bg-white/95 backdrop-blur-2xl p-4 sm:p-10 md:p-12 text-center relative overflow-hidden border border-[#EFECE6]">
             {/* Background Anime.js Ambient Concentric Arcs */}
             <div className="absolute -top-24 -left-24 w-64 h-64 border border-[#941B26]/10 rounded-full pointer-events-none" />
             <div className="absolute -bottom-24 -right-24 w-64 h-64 border border-[#C5A059]/15 rounded-full pointer-events-none" />
@@ -121,7 +121,7 @@ export const CountdownSection: React.FC = () => {
             </div>
 
             {/* Grand Date Feature Box */}
-            <div className="relative max-w-xl mx-auto my-3 p-6 sm:p-8 rounded-3xl bg-gradient-to-b from-[#FFFDFD] via-white to-[#FAF8F6] border border-[#EFECE6] shadow-[0_8px_30px_rgba(148,27,38,0.04)]">
+            <div className="relative max-w-xl mx-auto my-3 px-3 py-5 sm:p-8 rounded-3xl bg-gradient-to-b from-[#FFFDFD] via-white to-[#FAF8F6] border border-[#EFECE6] shadow-[0_8px_30px_rgba(148,27,38,0.04)] overflow-hidden">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <span className="h-[1px] w-8 bg-[#941B26]/30" />
                 <span className="font-serif-tc text-xs tracking-widest text-[#941B26] font-semibold">
@@ -136,13 +136,13 @@ export const CountdownSection: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="font-cinzel text-5xl sm:text-7xl md:text-8xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#941B26] via-[#B82835] to-[#941B26] py-1 drop-shadow-sm select-none"
+                className="font-cinzel text-3xl min-[360px]:text-4xl min-[410px]:text-[2.6rem] sm:text-7xl md:text-8xl font-black tracking-normal min-[410px]:tracking-tight sm:tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#941B26] via-[#B82835] to-[#941B26] py-1 drop-shadow-sm select-none whitespace-nowrap leading-tight"
               >
                 {WEDDING_DATE_DISPLAY}
               </motion.div>
 
               {/* Weekday & Time Details */}
-              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 mt-3 font-serif-tc text-sm sm:text-base text-[#221819]">
+              <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-4 mt-3 font-serif-tc text-xs sm:text-base text-[#221819]">
                 <span className="font-medium text-[#941B26] bg-[#FFF5F5] border border-[#941B26]/25 px-3 py-0.5 rounded-full text-xs sm:text-sm">
                   {WEDDING_DATE_WEEKDAY}
                 </span>
