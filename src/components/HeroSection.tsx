@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Sparkles, Calendar, MapPin } from 'lucide-react';
-import { WEDDING_DATE_DISPLAY, WEDDING_DATE_WEEKDAY, WEDDING_LOCATION, COUPLE_NAMES } from '../data';
+import { WEDDING_DATE_DISPLAY, WEDDING_DATE_WEEKDAY, WEDDING_LOCATION, COUPLE_NAMES, PARENTS_NAMES } from '../data';
 
 export const HeroSection: React.FC = () => {
   const { scrollY } = useScroll();
@@ -82,23 +82,52 @@ export const HeroSection: React.FC = () => {
           </motion.div>
         </motion.div>
 
-        {/* Couple Chinese Names with Microsoft JhengHei - No hover color change */}
-        <motion.h1
+        {/* Couple Chinese Names and Parents Side-by-Side */}
+        <motion.div
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          className="font-serif-tc text-4xl sm:text-5xl md:text-7xl font-normal tracking-wide text-[#221819] mb-6 sm:mb-8 select-none drop-shadow-sm"
+          className="flex items-start justify-center gap-3 sm:gap-8 md:gap-12 mb-6 sm:mb-8 select-none"
         >
-          <span className="inline-block">
-            {COUPLE_NAMES.groom.zh}
-          </span>
-          <span className="inline-block mx-4 md:mx-6 text-[#941B26] font-cormorant italic text-3xl sm:text-4xl md:text-5xl">
+          {/* Groom Side */}
+          <div className="flex flex-col items-center text-center">
+            <h1 className="font-serif-tc text-3xl min-[380px]:text-4xl sm:text-5xl md:text-6xl font-normal tracking-wide text-[#221819] drop-shadow-sm">
+              {COUPLE_NAMES.groom.zh}
+            </h1>
+            
+            <div className="mt-2.5 sm:mt-3 flex flex-col items-center">
+              <span className="font-cormorant italic text-xs sm:text-sm tracking-widest text-[#941B26] font-semibold">
+                Parents
+              </span>
+              <div className="mt-1 flex items-center justify-center gap-2 sm:gap-3.5 font-serif-tc text-xs sm:text-sm md:text-base text-[#4A3E40] whitespace-nowrap">
+                <span className="tracking-widest">{PARENTS_NAMES.groom.father}</span>
+                <span className="tracking-widest">{PARENTS_NAMES.groom.mother}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Ampersand */}
+          <div className="text-[#941B26] font-cormorant italic text-2xl min-[380px]:text-3xl sm:text-4xl md:text-5xl pt-1 sm:pt-2">
             &
-          </span>
-          <span className="inline-block">
-            {COUPLE_NAMES.bride.zh}
-          </span>
-        </motion.h1>
+          </div>
+
+          {/* Bride Side */}
+          <div className="flex flex-col items-center text-center">
+            <h1 className="font-serif-tc text-3xl min-[380px]:text-4xl sm:text-5xl md:text-6xl font-normal tracking-wide text-[#221819] drop-shadow-sm">
+              {COUPLE_NAMES.bride.zh}
+            </h1>
+
+            <div className="mt-2.5 sm:mt-3 flex flex-col items-center">
+              <span className="font-cormorant italic text-xs sm:text-sm tracking-widest text-[#941B26] font-semibold">
+                Parents
+              </span>
+              <div className="mt-1 flex items-center justify-center gap-2 sm:gap-3.5 font-serif-tc text-xs sm:text-sm md:text-base text-[#4A3E40] whitespace-nowrap">
+                <span className="tracking-widest">{PARENTS_NAMES.bride.father}</span>
+                <span className="tracking-widest">{PARENTS_NAMES.bride.mother}</span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Elegant Date & Venue Pill Badge */}
         <motion.div

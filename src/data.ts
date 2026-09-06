@@ -18,6 +18,17 @@ export const COUPLE_NAMES = {
   monogram: 'J & K',
 };
 
+export const PARENTS_NAMES = {
+  groom: {
+    father: '白博文',
+    mother: '蘇靖雅',
+  },
+  bride: {
+    father: '李易諭',
+    mother: '儲慧平',
+  },
+};
+
 export const WEDDING_LOCATION = {
   name: '高雄寒軒國際大飯店 · 40F 嘉賓廳',
   englishName: 'Han-Hsien International Hotel Kaohsiung, 40F VIP Room',
