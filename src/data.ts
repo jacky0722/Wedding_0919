@@ -28,10 +28,12 @@ export const WEDDING_LOCATION = {
   parking: '飯店地下室 B2-B4 備有貴賓平面及機械停車場，參加婚宴之貴賓提供免費停車消磁優惠。',
 };
 
+const base = import.meta.env.BASE_URL || './';
+
 export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
     id: 'g-1192',
-    url: '/photos/20260721婚紗攝影-毛片-1192.jpg',
+    url: `${base}photos/20260721婚紗攝影-毛片-1192.jpg`,
     title: '春日煦陽',
     caption: '陽光穿透樹梢，捕捉相視一笑的溫潤情意',
     category: 'romantic',
@@ -39,7 +41,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: 'g-1139',
-    url: '/photos/20260721婚紗攝影-毛片-1139.jpg',
+    url: `${base}photos/20260721婚紗攝影-毛片-1139.jpg`,
     title: '浪漫時光',
     caption: '相視而笑，勾勒出心中最純淨的承諾',
     category: 'ceremony',
@@ -47,7 +49,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: 'g-1017',
-    url: '/photos/20260721婚紗攝影-毛片-1017.jpg',
+    url: `${base}photos/20260721婚紗攝影-毛片-1017.jpg`,
     title: '花漾約定',
     caption: '盛放的笑顏，定格成青春中最璀璨的誓約',
     category: 'romantic',
@@ -55,7 +57,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: 'g-529',
-    url: '/photos/20260721婚紗攝影-毛片-529.jpg',
+    url: `${base}photos/20260721婚紗攝影-毛片-529.jpg`,
     title: '微醺暮色',
     caption: '暮色溫潤如水，執手同行每一步皆是心動',
     category: 'romantic',
@@ -63,7 +65,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: 'g-25',
-    url: '/photos/20260721婚紗攝影-毛片-25.jpg',
+    url: `${base}photos/20260721婚紗攝影-毛片-25.jpg`,
     title: '誓約深情',
     caption: '微風輕拂裙襬，在相擁中找到一生的歸宿',
     category: 'ceremony',
@@ -71,7 +73,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   },
   {
     id: 'g-650',
-    url: '/photos/20260721婚紗攝影-毛片-650.jpg',
+    url: `${base}photos/20260721婚紗攝影-毛片-650.jpg`,
     title: '甜蜜凝眸',
     caption: '相視而笑，相視相惜此生不渝',
     category: 'lifestyle',
